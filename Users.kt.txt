@@ -1,0 +1,7 @@
+@Parcelize
+data class Users(
+    var strId: String = "0",
+    var strName: String? = null,
+    var strAddress: String? = null,
+    var intAge: Int? = 0
+):Parcelable

@@ -1,0 +1,14 @@
+class UsersViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+    fun bindItem(users: Users) {
+        view.apply {
+            //get data users
+            val name = "Nama   : ${users.strName}"
+            val addr = "Alamat : ${users.strAddress}"
+            val age = "Umur    : ${users.intAge.toString()}"
+            //set view
+            tv_name.text = name
+            tv_adress.text = addr
+            tv_age.text = age
+        }
+    }
+}
